@@ -5,6 +5,7 @@ function same(arr1, arr2) {
 	}
 
 	for (let i = 0; i < arr1.length; i++) {
+		// indexOf loop through the whole array
 		let index = arr2.indexOf(arr1[i] ** 2);
 		if (index === -1) {
 			return false;
@@ -13,5 +14,5 @@ function same(arr1, arr2) {
 	}
 	return true;
 }
-
+// O(n^2)
 console.log(same([1, 3, 2, 4], [1, 4, 16, 9]));
