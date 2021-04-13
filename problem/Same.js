@@ -5,15 +5,11 @@ function same(arr1, arr2) {
 	}
 
 	for (let i = 0; i < arr1.length; i++) {
-		for (let j = 0; j < arr2.length; j++) {
-			let index = arr2.indexOf(arr1[i] ** 2);
-			if (index === -1) {
-				return false;
-			} else {
-				arr2.splice(index, 1);
-				break;
-			}
+		let index = arr2.indexOf(arr1[i] ** 2);
+		if (index === -1) {
+			return false;
 		}
+		arr2.splice(index, 1);
 	}
 	return true;
 }
