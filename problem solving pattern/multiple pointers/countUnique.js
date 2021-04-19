@@ -17,6 +17,5 @@ function countUnique(arr) {
 }
 
 let sortedArray = [1, 2, 3, 4, 4, 4, 7, 7, 12, 12, 13];
-// let sortedArray = [];
 
 console.log(countUnique(sortedArray));
