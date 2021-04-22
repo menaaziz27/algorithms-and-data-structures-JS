@@ -14,3 +14,6 @@ function averagePair(arr, target) {
     }
     return false;
 }
+
+console.log(averagePair([1, 2, 3, 4, 5], 2)); // true
+console.log(averagePair([1, 2, 3, 4, 5], 6)); // false

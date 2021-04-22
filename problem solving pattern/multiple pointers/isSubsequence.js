@@ -1,4 +1,5 @@
 function isSubsequence(str1, str2) {
+
     if (str1.length > str2.length) return false;
 
     let i = 0;
@@ -11,5 +12,5 @@ function isSubsequence(str1, str2) {
     return false;
 }
 
-console.log(isSubsequence('abc', 'aebdcf'));
-console.log(isSubsequence('abc', 'acb'));
+console.log(isSubsequence('abc', 'aebdcf')); // true
+console.log(isSubsequence('abc', 'acb')); // false

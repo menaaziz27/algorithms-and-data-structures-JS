@@ -1,6 +1,7 @@
 // multiple pointers
 function areThereDuplicates(...args) {
     let sortedArray = args.sort();
+
     let left = 0;
     let right = 1;
     while (right < sortedArray.length) {
@@ -14,6 +15,6 @@ function areThereDuplicates(...args) {
     return false;
 }
 
-console.log(areThereDuplicates(1, 2, 3, 4));
-console.log(areThereDuplicates(1, 2, 3, 3));
-console.log(areThereDuplicates('a', 'b', 'c', 'a'));
+console.log(areThereDuplicates(1, 2, 3, 4)); // false
+console.log(areThereDuplicates(1, 2, 3, 3)); //true
+console.log(areThereDuplicates('a', 'b', 'c', 'a')); //true
