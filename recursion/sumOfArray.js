@@ -1,6 +1,4 @@
-// productOfArray([1,2,3]) // 6
-// productOfArray([1,2,3,10]) // 60
-function productOfArray(arr) {
+function sumOfArray(arr) {
     let result = 0;
 
     function helper(inputArr) {
@@ -16,4 +14,6 @@ function productOfArray(arr) {
     return result;
 }
 
-console.log(productOfArray([1, 2, 3, 4, 5]));
+console.log(sumOfArray([1, 2, 3, 4, 5]));
+// productOfArray([1,2,3]) // 6
+// productOfArray([1,2,3,10]) // 60
